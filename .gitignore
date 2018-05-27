@@ -1,9 +1,0 @@
-.DS_Store
-.idea
-
-hooks/
-node_modules/
-platforms/
-plugins/
-releases/
-www/
