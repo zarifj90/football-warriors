@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+npm install
+mkdir platforms plugins www
+cordova platform add android
