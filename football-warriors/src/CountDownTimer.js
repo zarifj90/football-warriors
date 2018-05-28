@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-
+import './App.css';
+import './bootstrap.css';
+import { Row, Grid, Col } from 'react-bootstrap';
 
 class CountDownTimer extends Component {
   constructor() {
@@ -48,10 +50,28 @@ class CountDownTimer extends Component {
   render() {
     return(
       <div>
-        {this.state.days} days
-        {this.state.hours} hours
-        {this.state.minutes} minutes
-        {this.state.seconds} seconds
+        <div className="App">
+          <Grid>
+            <Row>
+              <Col xs={6} md={6}>
+                <span>{this.state.days} days</span>
+              </Col>
+              <Col xs={6} md={6}>
+                <span>{this.state.hours} hours</span>
+              </Col>
+            </Row>
+          </Grid>
+          <Grid>
+            <Row>
+              <Col xs={6} md={6}>
+                <span>{this.state.minutes} minutes</span>
+              </Col>
+              <Col xs={6} md={6}>
+               <span>{this.state.seconds} seconds</span>
+              </Col>
+            </Row>
+          </Grid>
+        </div>
       </div>
       );
   }
